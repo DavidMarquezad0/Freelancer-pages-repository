@@ -57,7 +57,7 @@ h1 {
 }
 
 .container {
-    max-width: 1200rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -71,7 +71,7 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     border-radius: .5rem;
-    border: none;
+
     width: 90%;
     text-align: center;
     border: none;
@@ -151,18 +151,21 @@ h3 {
     flex-direction: column;
 }
 
-@media (min-width: 768px) { /* cuando se tenga 768px a mas se ejecutaran estos estilos*/
+@media (min-width: 768px) { 
+    /* cuando se tenga 768px a mas se ejecutaran estos estilos*/
     .navigation-main {
         flex-direction: row;
         justify-content: space-between;
 
     }
-}
 
-.button {
-    width: auto;
-}
 
+    .button {
+        width: auto;
+    }
+
+
+}
 
 .navigation-main > a {
     display: block;
@@ -214,6 +217,8 @@ h3 {
     color: var(--primary);
 }
 
+ /* servicios ¨*/
+
 .services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -239,7 +244,11 @@ h3 {
 .service .icons {
     height: 15rem;
     width: 15rem;
-
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .form {
