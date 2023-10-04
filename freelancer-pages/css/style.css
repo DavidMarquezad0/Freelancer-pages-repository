@@ -76,6 +76,7 @@ h1 {
     text-align: center;
     border: none;
 
+    /* cursor:pointer*/
 }
 
 .shadow {
@@ -152,6 +153,7 @@ h3 {
 }
 
 @media (min-width: 768px) { 
+    /* @media (768px >=768px) es equivalente al primero */
     /* cuando se tenga 768px a mas se ejecutaran estos estilos*/
     .navigation-main {
         flex-direction: row;
@@ -159,13 +161,29 @@ h3 {
 
     }
 
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+
+    .fields-container {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        column-gap: 1rem;
+    }
 
     .button {
         width: auto;
+        background-color: var(--primary);
     }
 
-
 }
+
+.button:hover {
+    cursor: pointer;
+}
+
 
 .navigation-main > a {
     display: block;
@@ -219,11 +237,7 @@ h3 {
 
  /* servicios ¨*/
 
-.services {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;
-}
+
 
 .service {
     display: flex;
@@ -273,11 +287,7 @@ h3 {
     color: var(--primary);
 }
 
-.fields-container {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    column-gap: 1rem;
-}
+
 
 
 .field {
